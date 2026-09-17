@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: #1a1a1a; /* Fondo oscuro elegante estilo parrilla */
+    color: #fff;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ff9900; /* Línea dorada/naranja inferior */
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #ffffff; /* Texto del logo en blanco */
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.main-nav .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ff9900; /* Efecto naranja al pasar el mouse */
+}
+
+.nav-button.btn-dona {
+    background-color: #ff9900; /* Botón naranja fuego */
+    color: #1a1a1a !important;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-button.btn-dona:hover {
+    background-color: #e68a00;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #ff9900, #ffb380);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 107, 60, 0.3);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Stats */
+.stats-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.stat {
+  flex: 0 1 140px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #f1f5f9;
+  opacity: 0.95;
+}
+
+/* Projects */
+.projects {
+  padding:3rem 0;
+}
+
+.lead {
+  color:#666;
+}
+
+.project-cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.card {
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  overflow:hidden;
+  transition:transform .2s;
+}
+
+.card:hover {
+  transform:translateY(-4px);
+}
+
+.card-img {
+  height:180px; /* Le subí un poco la altura para que la imagen luzca mejor */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#000000;
+  font-weight:600;
+}
+
+.card-body {
+  padding:1rem;
+}
+
+.card-body h3 {
+  margin:0 0 0.4rem;
+}
+
+.card-body p {
+  color:#666;
+  margin:0;
+}
+
+/* IMÁGENES CORTADAS DE TUS TARJETAS */
+#antioquia-caucasia {
+  background-image: url("img/negocios1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#guajira {
+  background-image: url("img/negocios 2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#cordoba {
+  background-image: url("img/negocios 3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Newsletter */
+.newsletter {
+  padding:2rem 0;
+  background:linear-gradient(90deg, #1a1a1a 0%, #333 100%);
+  color:#fff;
+}
+
+.newsletter-inner {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+}
+
+.subscribe-form {
+  display:flex;
+  gap:0.5rem;
+}
+
+.subscribe-form input {
+  padding:0.6rem 0.8rem;
+  border-radius:8px;
+  border:none;
+  outline:none;
+}
+
+.form-message {
+  margin-top:0.6rem;
+}
+/* --- ESTILOS ESENCIALES PARA EL CARRUSEL --- */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; /* Oculta las fotos que no están activas */
+  border-radius: 15px;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out; /* Animación suave al cambiar */
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 450px; /* Altura fija para que no se vean gigantes */
+  object-fit: cover;
+  display: block;
+}
+
+/* Capa flotante con datos y botones */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  box-sizing: border-box;
+  pointer-events: none; /* Permite dar clic a las flechas detrás */
+  z-index: 5;
+}
+
+.overlay-buttons, .overlay-stats {
+  pointer-events: auto;
+}
+
+/* Botones de navegación < y > */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 153, 0, 0.9);
+}
+
+.carousel-btn.prev { left: 15px; }
+.carousel-btn.next { right: 15px; }
+
+/* Puntos de navegación (dots) */
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background: #ff9900;
+  transform: scale(1.2);
+}
+/* --- ENCUADRE DE LA IMAGEN --- */
+.carousel-slide img {
+  width: 100%;
+  height: 520px; /* Altura adecuada para ver el plato entero */
+  object-fit: cover;
+  object-position: center; /* Centra el enfoque de la imagen */
+  border-radius: 20px;
+}
+
+/* --- TARJETAS FLOTANTES (GLASSMORPHISM) --- */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Empuja las tarjetas hacia abajo */
+  align-items: center;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.overlay-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  pointer-events: auto;
+}
+
+.glass-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.glass-btn.blue { background-color: #1a73e8; }
+.glass-btn.dark { background-color: #2d2522; }
+
+/* Contenedor de las 3 cajitas flotantes */
+.overlay-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  pointer-events: auto;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25); /* Fondo semitransparente */
+  backdrop-filter: blur(12px); /* Efecto borroso de cristal */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 18px 15px;
+  text-align: center;
+  color: #ffffff; /* Texto blanco obligatorio */
+  flex: 1;
+  max-width: 220px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.glass-card h3 {
+  font-size: 2rem;
+  margin: 0 0 5px 0;
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.glass-card .card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.glass-card .card-sub {
+  font-size: 0.75rem;
+  color: #f0f0f0;
+  display: block;
+  margin-top: 4px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Seven Tables</title>
+    <!-- Le metí las dos formas para que encuentre el CSS sí o sí -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body id="inicio">
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio">
+        <img src="img/Logo2.jpg" alt="Logo" />
+        <span>The Seven Tables</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#lanzamientos">Lanzamientos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#redes">Redes Sociales</a></li>
+          <li><a class="nav-button btn-dona" href="#redes">Reservar</a></li>
+        </ul>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- CARRUSEL CON GLASSMORPHISM -->
+    <section id="lanzamientos" class="carousel-section container">
+      <h2 class="section-title">Nuevos Lanzamientos</h2>
+      
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="img/Asesoria.jpg" alt="Consultorías">
+          </div>
+          <div class="carousel-slide">
+            <img src="img/Lanzamiento 2.jpg" alt="Talleres">
+          </div>
+          <div class="carousel-slide">
+            <img src="img/Lanzamiento 3.jpg" alt="Asesorías">
+          </div>
+        </div>
+
+        <!-- TARJETAS FLOTANTES SOBRE EL CARRUSEL -->
+        <div class="carousel-overlay">
+          <div class="overlay-buttons">
+            <a href="#proyectos" class="glass-btn blue">Nuestras sucursales</a>
+            <a href="#redes" class="glass-btn dark">A domicilio</a>
+          </div>
+
+          <div class="overlay-stats">
+            <div class="glass-card">
+              <h3>+10</h3>
+              <p class="card-title">sucursales</p>
+              <span class="card-sub">Regístrate</span>
+            </div>
+            <div class="glass-card">
+              <h3>+12,000</h3>
+              <p class="card-title">Suscriptores</p>
+              <span class="card-sub">Síguenos para actualizaciones diarias y promociones</span>
+            </div>
+            <div class="glass-card">
+              <h3>+20</h3>
+              <p class="card-title">Platillos</p>
+              <span class="card-sub">de la casa</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn prev" id="carouselPrev">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext">&#10095;</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="projects container">
+      <h2>Proyectos en el Mundo</h2>
+      <p class="lead">
+        En esta empresa restaurantera brindamos los mejores platillos del mundo, con los mejores sabores y presentaciones.
+      </p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Emprendimiento y negocios</h3>
+            <p>Diagnóstico de rentabilidad y balances generales.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Curso completo de artes culinarias premium</h3>
+            <p>Consultorías y cursos de cocina internacional.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Impulso Gastronómico</h3>
+            <p>Centros de aprendizaje de cocina internacional.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER CON REDES SOCIALES Y DIRECCIÓN EN POLANCO -->
+  <footer id="redes" class="footer" style="background: #1a1a1a; color: #fff; padding: 2.5rem 0; margin-top: 3rem; border-top: 2px solid #ff9900;">
+    <div class="container" style="text-align: center;">
+      
+      <!-- SECCIÓN DE CONTACTO Y UBICACIÓN -->
+      <div class="footer-grid" style="margin-bottom: 2rem;">
+        <div class="contacto">
+          <h3 style="color: #ff9900; margin-bottom: 1rem; font-size: 1.5rem;">Contacto y Ubicación</h3>
+          <address style="font-style: normal; line-height: 1.8;">
+            <p style="margin-bottom: 0.5rem;">
+              <i class="fa fa-map-marker-alt" style="color: #ff9900; margin-right: 8px;"></i>
+              <a href="https://maps.google.com/?q=Av.+Presidente+Masaryk,+Polanco,+Ciudad+de+México" target="_blank" rel="noreferrer noopener" style="color: #ffffff; text-decoration: none;">
+                <span style="color: #b9ddff; font-weight: bold;">Ubicación: </span> Av. Presidente Masaryk, Polanco, 11560 Ciudad de México, CDMX
+              </a>
+            </p>
+            <p>
+              <i class="fa fa-phone" style="color: #ff9900; margin-right: 8px;"></i>
+              <span style="color: #b9ddff; font-weight: bold;">Teléfono: </span> 
+              <a href="tel:+5519224580" style="color: #ffffff; text-decoration: none;"> 55 1922 4580</a>
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <!-- REDES SOCIALES -->
+      <div class="social-links" style="display: flex; justify-content: center; gap: 20px; margin-top: 1.5rem;">
+        <a href="https://www.instagram.com/santiago_gv25?igsi=OHh1OTZ1d3RneGJ1" target="_blank" rel="noopener noreferrer" style="color: #ff9900; font-size: 2.2rem; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" style="color: #ffffff; font-size: 2.2rem; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" style="color: #ffffff; font-size: 2.2rem; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
+      <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #ccc;">&copy; 2026 The Seven Tables. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+<!-- Corregida la ruta del script para que busque en minúsculas y mayúsculas -->
+<script src="script.js"></script>
+<script src="JS/script.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

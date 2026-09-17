@@ -1,0 +1,151 @@
+body{
+background-color: rgb(228, 77, 7); 
+font-family: sans-serif; 
+display: flex; 
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 10px 25px rgba(3, 1, 0, 0.5);
+}
+
+.card{
+background-color: blue;  
+border: radius 12px;
+box-shadow: 0 4px 12px red(39,246,121)
+padding: 30px;
+max-width: 400xp;
+text-align:center;
+}
+
+.card img {
+border-radius: 50%;
+width: 130px;
+height: 130px;  
+object-fit: cover;
+margin-bottom: 20px;
+}
+
+
+.card h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #16e70f;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #e93d08;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #030303;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding:0;
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  background-color:#2c95f7;
+  margin: 5px 0;
+  padding:8px;
+  border-radius: 20px;
+}
+
+.card a {
+ text-decoration: none;
+ color: #a709f0;
+ font-weight: bold;
+}
+/* ========================================= */
+/* CÓDIGO NUEVO - SECCIÓN / TARJETAS        */
+/* ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background-color: blue;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(39, 246, 121, 0.5);
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+}
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+/* Estilos para el contenedor del logo y el título */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  border-radius: 100px;
+  width: 150px;
+  height: 90px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* BOTONES DE INICIO Y BARRA DE NAVEGACIÓN */
+.nav ul {
+  display: flex;
+  list-style: none; /* Quita los puntos (viñetas) de la lista. */
+  gap: 15px; /* Espacio entre las secciones del menú nav */
+}
+
+.nav-button {
+  background-color: #9AAF94;
+  color: #333333;
+  padding: 10px 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+  border: 3px solid white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #7F966F;
+  transform: scale(1.05);
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+}
